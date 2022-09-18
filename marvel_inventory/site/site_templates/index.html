@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class = "container">
+    <!-- Header Section -->
+    <header class="row">
+        <div class="col-12 col-md-6" id="header-text">
+            <h2>Collect and Keep all of your favorite Marvel Superheros in one place!</h2>
+            <h5>An amazing API tool for all of the Superhero loving developers!</h5>
+            <div>
+                <button class="btn btn-danger">View Our Docs</button>
+                <button class="btn btn-danger">Join Our Discord</button>
+            </div>
+        </div>
+        <!-- Header Image -->
+        <div class="col-12 col-md-6">
+            <img src="../../static/images/hero_image.jpeg" alt="Hero Header Image" class="header-image">
+        </div>
+    </header>
+    <!-- End of Header Section -->
+    <!-- Middle Section -->
+    <section class="row">
+        <div class="col-12" id="middle-text">
+            <h2>Display Your Heros Here!</h2>
+            <p>You can harness the power of an API to expand your collection!</p>
+        </div>
+    </section>
+    <!-- End of Middle Section -->
+    <!-- Collection of Features Section -->
+    <section class="row" id="features-section">
+        <div class="col-md-4">
+            <img src="../../static/images/deadpool.jpg" alt="DEADPOOL" id="deadpool">
+            <h4>Comics</h4>
+            <p>
+                Maybe your passion started on paper, with comics. We have the comic book superheroes!
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img src="../../static/images/ironman.jpeg" alt="IRONMAN" id="ironman">
+            <h4>Movies</h4>
+            <p>
+                Maybe your passion for Marvel started with the movies. We have the superheroes from the movies!
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img src="../../static/images/thor.jpeg" alt="THOR" id="thor">
+            <h4>Marvel</h4>
+            <p>
+                Everyone who has a passion for Marvel, has a place at The Marvel Museum!
+            </p>
+        </div>
+    </section>
+    <!-- End Collection of Features -->
+    <!-- Start of Community Section -->
+    <section class="row">
+        <div class="col-md-6">
+            <img src="../../static/images/hulk.jpeg" alt="HULK" id="hulk">
+        </div>
+        <div class="col-md-6" id="hulk">
+            <h4>Talk with like minded Marvel nerds!</h4>
+            <p>
+                Talk with people from around the world who are just as dedicated to 
+                Marvel as you are. Join our discord to discuss all the latest Marvel news!
+                Our latest articles are discussing all of the conspiracy stories surrounding Marvel!
+            </p>
+            <div>
+                <button class="btn btn-danger">Join Our Discord</button>
+                <button class="btn btn-danger">Read All the Latest</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Community Section -->
+    <!-- Start of the Footer -->
+    <footer class="row" id="footer">
+        <div class="col-12 col-md-2">
+            <img src="../../static/images/marvel.png" alt="Marvel Logo" id="marvel-logo">
+        </div>
+        <div class="col-md-2">
+            <div class="footer-text-flex">
+                <h4>Platform</h4>
+                <p>Why The Marvel Museum</p>
+                <p>The Marvel Museum</p>
+                <p>Donate</p>
+                <p>Spread the Word</p>
+                <p>Our Mission</p>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="footer-text-flex">
+                <h4>Women in Marvel</h4>
+                <p>She Hulk</p>
+                <p>Blackwidow</p>
+                <p>Captain Marvel</p>
+                <p>Wasp</p>
+                <p>Valkyrie</p>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="footer-text-flex">
+                <h4>News</h4>
+                <p>What movie is next?</p>
+                <p>How to train like a superhero</p>
+                <p>She Hulk, who is She?</p>
+                <p>Best places to get Comic Books</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="footer-text-flex">
+                <h4>Follow Us</h4>
+                <p>Twitter</p>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>YouTube</p>
+                <p>Disney+</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+{% endblock content %}
