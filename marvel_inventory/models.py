@@ -29,17 +29,15 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(150), nullable = True, default = '')
     g_auth_verify = db.Column(db.Boolean, default = False)
     token = db.Column(db.String, default = '', unique = True)
-    date_established = db.Column(db.Integer, nullable = True, default = '')
     superhero = db.relationship('Superhero', backref = 'owner', lazy = True)
 
 
-    def __init__(self, email, username = '', id = '', password = '', token = '', date_established = '', g_auth_verify = False):
+    def __init__(self, email, username = '', id = '', password = '', token = '', g_auth_verify = False):
         self.id = self.set_id()
         self.username = username
         self.password = self.set_password(password)
         self.email = email
         self.token = self.set_token(6)
-        self.date_established = date_established
         self.g_auth_verify = g_auth_verify
 
     def set_token(self, length):
